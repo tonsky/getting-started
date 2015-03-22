@@ -15,7 +15,8 @@
   (alter-var-root var (constantly val)))
 
 (defn log [& args]
-  (binding [*out* *err*]
+  nil
+  #_(binding [*out* *err*]
     (apply println "[" @turn "]" args)))
 
 (defn ÷ [a b]
